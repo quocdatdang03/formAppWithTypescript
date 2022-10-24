@@ -1,26 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Form from "./components/Form";
+import List from "./components/List";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-[#ededed] min-h-screen">
+      <div className="max-w-[1200px] mx-[auto] grid grid-cols-3 pt-[100px] gap-x-[90px]">
+        <Form />
+        <List />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
